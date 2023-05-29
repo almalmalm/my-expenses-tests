@@ -1,6 +1,6 @@
 describe('Home page - description', () => {
   it('Verifies title is equal to “You can track you money expenses, view monthly statistics and more.', () => {
-    cy.visit('http://localhost:3000/');
+    cy.visit('https://my-expenses-three.vercel.app/');
     cy.get('[data-test="information"]')
       .contains('My expenses')
       .parent()
