@@ -1,6 +1,6 @@
 import { MainPage } from '../pages/MainPage';
 
-describe('Home page tests', () => {
+describe('Main page cypress tests', () => {
   const mainPage = new MainPage();
 
   beforeEach(() => {
