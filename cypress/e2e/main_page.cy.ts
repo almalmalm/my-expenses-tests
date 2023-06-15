@@ -19,7 +19,10 @@ describe('Home page tests', () => {
   it('Verifies description is located under the title', () => {
     mainPage.verifyDescriptionIsUnderTheTitle();
   });
-  it('Verifies login button is visible', () => {
-    mainPage.verifyDescriptionIsUnderTheTitle();
+  it('Verifies sign in button is visible', () => {
+    mainPage.verifySignInButtonIsVisible();
+  });
+  it('Verifies sign up button is visible', () => {
+    mainPage.verifySignUpButtonIsVisible();
   });
 });
