@@ -25,4 +25,10 @@ describe('Main page cypress tests', () => {
   it('Verifies sign up button is visible', () => {
     mainPage.verifySignUpButtonIsVisible();
   });
+  it('Verifies sign in button color is teal', () => {
+    mainPage.verifySignInButtonColor('rgb(204, 251, 241)');
+  });
+  it('Verifies sign up button color is teal', () => {
+    mainPage.verifySignUpButtonColor('rgb(204, 251, 241)');
+  });
 });

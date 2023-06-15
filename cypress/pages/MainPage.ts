@@ -38,6 +38,18 @@ class MainPage {
   verifySignUpButtonIsVisible() {
     cy.get(this.buttonSignUp).should('be.visible');
   }
+  // Verify sign in button color
+  verifySignInButtonColor(color: string) {
+    cy.get(this.buttonSignIn)
+      .should('have.css', 'background-color')
+      .and('eq', color);
+  }
+  // Verify sign in button color
+  verifySignUpButtonColor(color: string) {
+    cy.get(this.buttonSignIn)
+      .should('have.css', 'background-color')
+      .and('eq', color);
+  }
 }
 
 export { MainPage };
